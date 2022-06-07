@@ -4,6 +4,9 @@ let myLibrary = [
         author: 'J.R.R Tolkien',
         pages: '600',
         readStatus: true,
+        toggleReadStatus: function(){
+            this.readStatus = !this.readStatus;
+        }
     },
 ];
 
