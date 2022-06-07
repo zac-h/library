@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bodyContainer{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.bodyContainer>*{
+    padding: 10px 50px;
+}
+
+#header{
+    background-color: white;
+}
+
+#main{
+    background-color: rgb(215, 215, 215);
+}
+
+#cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.card>*{
+    margin: 10px;
+}
+
+/* The popup form - hidden by default */
+.form-popup{
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: 15px;
+    border: 3px solid black;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: 20px;
+    background-color: white;
+}
+
+.form-container>*{
+    margin: 5px 0 5px 0;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=number] {
+    width: 90%;
+    padding: 15px;
+    
+    border: none;
+    background: #f1f1f1;
+  }
+
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+button{
+    width: 100px;
+    height: 1.5rem;
+    border-radius: 10px;
+}
+
+.btn-red{
+    background-color: rgb(255, 95, 95);
+}
+
+.btn-green{
+    background-color: rgb(117, 220, 117);
+}
+
+#footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body onload="displayBooks(myLibrary)">
+        <div class="bodyContainer">
+            <div id="header">
+                <h1>My Library</h1>
+            </div>
+            <div id="main">
+                <button type="button" class="btn openForm" onclick="openForm()">NEW BOOK</button>
+                <div id="cardContainer">
+                </div>
+                <div class="form-popup" id="formContainer">
+                    <form action="" class="form-container" id="myForm" onsubmit="event.preventDefault(); addBookToLibrary(this)">
+                        <label for="title">Title</label>
+                        <input type="text" placeholder="Title" name="title" required>
+                        <label for="author">Author</label>
+                        <input type="text" placeholder="Author" name="author" required>
+                        <label for="pages">No. of Pages</label>
+                        <input type="number" placeholder="No. of Pages" name="pages" required>
+                        <label for="readStatus">Read?</label>
+                        <input type="checkbox" name="readStatus">
+                        <button type="submit" class="btn" id="submitBook" >ADD TO LIST</button>
+                        <button type="button" class="btn closeForm" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+            </div>
+            <div id="footer">
+                <p>Copyright © <script>document.write(new Date().getFullYear())</script> Zachary Hill</p>
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
